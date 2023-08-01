@@ -1,0 +1,65 @@
+.social-callout {
+  position: relative;
+  z-index: 1;
+  padding: 25px 0 15px;
+  border-radius: 8px;
+  text-align: center;
+  line-height: 1.3;
+  overflow: hidden;
+  background-color: #112444;
+}
+.social-callout__title {
+  margin-bottom: 25px;
+  font-family: Montserrat,"Montserrat",sans-serif;
+  font-weight: 700;
+  font-style: italic;
+  text-transform: uppercase;
+  color: #fff;
+}
+.social-callout__title span {
+  display: block;
+  font-size: 14px;
+}
+.social-callout__title strong {
+  display: block;
+  font-size: 20px;
+}
+.social-callout__socials {
+  margin-bottom: 37px;
+}
+ul:last-child {
+  margin-bottom: 0;
+}
+.socials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 -4px;
+}
+.socials li {
+  padding: 0 4px;
+}
+.socials img {
+  width: 40px;
+  height: 40px;
+}
+.social-callout__label {
+  font-family: Montserrat,"Montserrat",sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  font-style: italic;
+  color: #fff;
+  text-align: center;
+}
+.social-callout__label span {
+  color: #00b1ff;
+}
+.social-callout__bg {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

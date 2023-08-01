@@ -1,0 +1,154 @@
+.match-list-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 57px;
+  width: 100%;
+  padding: 0 15px 0 5px;
+  transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+  background-color: #fff;
+}
+.match-list-item--inplay {
+  box-shadow: inset 3px 0 0 0 #f33c59;
+}
+.match-list-item:not(:last-child) {
+  border-bottom: 1px solid #f5f7f9;
+}
+.match {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.match-list-item .match-teams {
+  margin-right: auto;
+}
+.match-url--flex {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.match-state {
+  max-width: 57px;
+  flex: 0 0 57px;
+  text-align: center;
+  font-size: 12px;
+  color: #1a3150;
+}
+.match-status {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.match-status--inplay,
+.match-status--special {
+  color: #f33c59;
+}
+.match-state-outer {
+  position: relative;
+}
+.match-team__logo {
+  margin: 0 4px;
+  vertical-align: top;
+  font-size: 0;
+}
+.match-team__name {
+  font-size: 13px;
+  line-height: 22px;
+  color: #1a3150;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.image-size-sm {
+  height: 20px !important;
+  width: 20px !important;
+}
+.match-sets {
+  display: grid;
+  grid-template-columns: repeat(5, 22px);
+}
+.match-sets--inplay .match-set--current {
+  color: #f33c59;
+}
+.match-set,
+.match-set .match-score-result {
+  text-align: center;
+}
+.match-score-result {
+  display: block;
+  height: 100%;
+  width: 100%;
+  padding: 0 4px;
+  text-align: right;
+  position: relative;
+  border-radius: 4px;
+  background-color: transparent;
+}
+.match-set, .match-set .match-score-result {
+  text-align: center;
+}
+.match-game-score {
+  display: grid;
+  grid-template-columns: 36px;
+  grid-template-rows: repeat(2,20px);
+  grid-row-gap: 1px;
+  color: #1a3150;
+}
+.match-game-score__team {
+  display: grid;
+  grid-template-columns: 14px 22px;
+  grid-template-rows: 100%;
+  height: 100%;
+}
+.match-game-score__team--home {
+  grid-row: 1/2;
+}
+.match-game-score__team--away {
+  grid-row: 2/3;
+}
+.match-game-score--inplay .match-game-score__team {
+  color: #f33c59;
+}
+.match-game-score__team .match-score-result {
+  grid-column: 2/3;
+}
+.match-game-score__team .serving-icon {
+  grid-column: 1/2;
+  margin: auto;
+}
+.match-favourite-btn {
+  padding: 10px 10px 10px 15px;
+  margin-right: -10px;
+}
+.match-favourite-btn__icon {
+  display: block;
+  position: relative;
+  font-size: 16px;
+  width: 16px;
+  height: 16px;
+  color: #b6c5d4;
+}
+.match-favourite-btn__icon:after {
+  transform: scale(0);
+  transform-origin: 50% 50%;
+  transition: none;
+  opacity: 1;
+  color: #00b1ff;
+  position: absolute;
+}
+.match-favourite-btn__icon:after, .match-favourite-btn__icon:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 16px;
+  height: 16px;
+}
+.match-live {
+  color: red;
+}
+.match-lineup {
+  color: orange;
+}

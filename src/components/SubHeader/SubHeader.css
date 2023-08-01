@@ -1,0 +1,158 @@
+/* SubHeader.css */
+@media (min-width: 768px) {
+  .sub-header {
+    margin-bottom: 7px;
+  }
+}
+.sub-header {
+  /* display: none; */
+  position: relative;
+  z-index: 10;
+  background: #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.06);
+  left: 0;
+  width: 100%;
+  margin-bottom: 0px;
+  font-family: 'SF Pro','SF Pro TH', Arial, sans-serif;
+}
+
+.sub-header__items {
+  display: flex;
+  width: 100%;
+  padding: 10px 0;
+  margin-bottom: 0;
+  visibility: hidden;
+  overflow: hidden;
+  margin-top: 0;
+}
+
+.sub-header__item {
+  position: relative;
+  flex-shrink: 0;
+}
+.sub-header-buttons {
+  display: flex;
+  /* add your styles */
+}
+
+.sub-header-categories {
+  display: flex;
+  /* add your styles */
+}
+
+.sub-header-show-more {
+  /* add your styles */
+}
+
+.sub-header__item--live>a.active, .sub-header__link.active, .sub-header__link.nuxt-link-exact-active, .sub-header__toggle.active {
+  background: #007b46;
+  color: #fff;
+}
+.sub-header__item--highlights .sub-header__link {
+  border-radius: 100px;
+  padding: 0;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sub-header__link {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 40px;
+  padding: 0 12px 0 10px;
+  border: 0;
+  border-radius: 19px;
+  background: #f5f7f9;
+  color: #90a6be;
+  text-transform: uppercase;
+  white-space: nowrap;
+  font-size: 10px;
+  font-weight: 500;
+  transition: background .3s,color .3s;
+}
+.sub-header__item+.sub-header__item {
+  margin-left: 10px;
+}
+.sub-header__item--live .sub-header__link {
+  border-radius: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  height: 40px;
+  width: 40px;
+}
+.sub-header__item--live .sub-header__icon {
+  color: #f33c59;
+  font-size: 21px;
+  width: 21px;
+}
+.sub-header__icon {
+  width: 21px;
+  font-size: 21px;
+  color: #00b1ff;
+  transition: transform .3s ease-in-out;
+}
+.sub-header__item--live .sub-header__text {
+  color: #f33c59;
+  font-size: 7px;
+  position: relative;
+  bottom: 3px;
+}
+.sub-header__item--live .sub-header__text {
+  font-family: Montserrat,"Montserrat",sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+.sub-header__text {
+  margin-left: 9px;
+}
+.m-0 {
+  margin: 0!important;
+}
+.sub-header__item--live .sub-header__notification {
+  right: -9px;
+}
+.sub-header__notification {
+  position: absolute;
+  top: -4px;
+  right: -2px;
+  padding: 0 3px;
+  border: 2px solid #fff;
+  border-radius: 9px;
+  background: #1a3150;
+  color: #fff;
+  font-family: Montserrat,"Montserrat",sans-serif;
+  font-size: 8px;
+  font-weight: 700;
+  font-style: italic;
+  line-height: 13px;
+  transition: background .3s;
+}
+.sub-header__icon i:before {
+  margin: 0;
+}
+.sub-header__item+.sub-header__item--toggle, .sub-header__item--toggle {
+  justify-self: flex-end;
+  margin-left: auto;
+}
+[class*=" icon-"]:before, [class^=icon-]:before {
+  font-family: "oddspedia_font";
+  font-style: normal;
+  font-weight: 400;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  text-align: center;
+  font-feature-settings: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

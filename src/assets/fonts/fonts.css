@@ -1,0 +1,22 @@
+/* CSS */
+@font-face {
+  font-family: "SF Pro";
+  src: url("./sf-pro-display_regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "SF Pro TH";
+  src: url("./SFProTH.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Scorekub Font";
+  src: url("./scorekub_font.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}

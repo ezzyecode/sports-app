@@ -1,0 +1,167 @@
+.tipsters-top-three {
+  position: relative;
+  padding-top: 60px;
+}
+.tipsters-top-three:before {
+  content: "";
+  position: absolute;
+  z-index: 3;
+  top: 10px;
+  left: 13px;
+  right: 13px;
+  height: 85px;
+  background: url(https://cdn.oddspedia.com/images/static/tipsters-ranking/top-three-rank-confetti.svg) no-repeat 0 0;
+  background-size: 100% 100%;
+  pointer-events: none;
+}
+.tipsters-top-three__inner {
+  display: flex;
+  padding: 12px;
+  height: 160px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  background: #e1e7ed;
+}
+.tipsters-top-three__inner:last-child {
+  margin-bottom: 15px;
+}
+.t-ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.tipsters-top-three .user-avatar-with-rank {
+  margin-bottom: 8px;
+}
+.tipsters-top-three__item:first-child .user-avatar-with-rank {
+  margin-bottom: 14px;
+}
+.user-avatar-with-rank {
+  display: inline-block;
+  font-size: 0;
+}
+.user-avatar {
+  position: relative;
+  border-radius: 50%;
+}
+.user-avatar-with-rank__avatar {
+  border: 4px solid #1a3150;
+}
+.avatar {
+  position: relative;
+  overflow: hidden;
+  background-size: cover;
+  background-position: 50%;
+  border-radius: 50%;
+}
+.avatar:before {
+  content: "";
+  display: block;
+  padding-top: 100%;
+}
+.avatar img {
+  opacity: 0;
+  position: absolute;
+  left: -9999px;
+}
+.tipsters-top-three__item:first-child .user-avatar-with-rank__label {
+  background: #00b1ff;
+}
+.user-avatar-with-rank__label {
+  margin-top: -13px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transform: skew(-10deg);
+  width: 76px;
+  height: 18px;
+  background: #1a3150;
+  font-family: Montserrat,"Montserrat",sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  font-style: italic;
+  color: #fff;
+}
+.user-avatar-with-rank__label span {
+  transform: skew(10deg);
+}
+.tipsters-top-three .tipster-info {
+  display: block;
+}
+.tipster-info {
+  display: flex;
+  align-items: center;
+  line-height: 1.1;
+}
+.tipsters-top-three .tipster-info__name {
+  margin-bottom: 6px;
+  font-size: 13px;
+}
+.tipster-info__name {
+  display: block;
+  margin-bottom: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #242f52;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.tipsters-top-three .tipster-info__stats {
+  justify-content: center;
+}
+.tipster-info__country, .tipster-info__stats {
+  display: flex;
+  align-items: center;
+}
+.tipster-info__stats {
+  color: #6f8caa;
+}
+.tipsters-top-three .tipster-info__profit {
+  color: #1a3150!important;
+}
+.tipster-info__profit {
+  font-size: 11px;
+  font-weight: 500;
+}
+.color-success {
+  color: #2bd299!important;
+}
+.tipster-info__tips-count {
+  display: flex;
+  align-items: center;
+  font-size: 11px;
+  margin-left: 3px;
+}
+.tipsters-top-three__item {
+  flex: 1;
+  text-align: center;
+}
+.tipsters-top-three__item:first-child {
+  order: 2;
+  position: relative;
+  top: -40px;
+  height: 170px;
+  padding-top: 11px;
+  border-radius: 8px 8px 0 0;
+  background: linear-gradient(180deg,#f5f7f9 0,#e1e7ed);
+}
+.tipsters-top-three__item:nth-child(2) {
+  order: 1;
+  position: relative;
+  right: 6px;
+}
+.tipsters-top-three__item:nth-child(3) {
+  order: 3;
+  position: relative;
+  right: -6px;
+}
+.navigation-link__text {
+  padding: 10px;
+  border-radius: 8px 8px 0 0;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.45;
+  background-color: #e1e7ed;
+  text-align: center !important;
+}

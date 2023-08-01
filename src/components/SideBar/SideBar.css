@@ -1,0 +1,128 @@
+@media (min-width: 1280px) {
+  .sidebar {
+    width: 220px;
+    flex-basis: 220px;
+    margin-right: 20px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .sidebar {
+    display: block;
+    width: 192px;
+    min-width: 0;
+    flex: 0 0 192px;
+    margin-right: 20px;
+  }
+}
+.sidebar{
+  font-family: "SF Pro", "SF Pro TH", Arial, sans-serif;
+}
+.is-desktop.search-competitions {
+  scrollbar-face-color: #6f8caa;
+  scrollbar-track-color: #e1e7ed;
+}
+.is-desktop.search-competitions {
+  padding-right: 5px;
+  max-height: calc(100vh - 170px);
+  overflow: auto;
+}
+.search-competitions {
+  margin-bottom: 10px;
+}
+.search-competitions__form {
+  position: relative;
+  margin-bottom: 18px;
+}
+.search-competitions__form input {
+  width: 100%;
+  border-radius: 80px;
+  background-color: #fff;
+  padding: 13px 35px 12px 13px;
+  box-shadow: 0 0 20px 0 rgba(26, 49, 80, 0.06);
+  border: none;
+  outline: none;
+  font-size: 12px;
+}
+input {
+  font-family: "SF Pro", "SF Pro TH", Arial, sans-serif;
+}
+.search-competitions__form i {
+  position: absolute;
+  top: 50%;
+  right: -35px;
+  transform: translateY(-50%);
+  color: #90a6be;
+  font-size: 14px;
+  padding: 1px;
+  transition: color 0.2s;
+  right: 7px;
+}
+.search-competitions__form i {
+  font-family: "oddspedia_font";
+  font-style: normal;
+  font-weight: 400;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  text-align: center;
+  font-feature-settings: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.league-list__label {
+  padding: 5px 10px;
+  text-transform: uppercase;
+  color: #1a3150;
+}
+.caption {
+  font-size: 11px;
+}
+.league-list__label--sm {
+  padding: 0 10px;
+  font-size: 10px;
+}
+.league-list__link {
+  display: flex;
+  align-items: flex-end;
+  width: 100%;
+  padding: 10px;
+  line-height: 20px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #1a3150;
+  transition: color 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+.league-list__link__img {
+  flex-shrink: 0;
+  margin-right: 10px px;
+}
+.t-ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.league_items {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 8px;
+}
+.league_img {
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 100%;
+  height: auto;
+  margin-right: 8px;
+}
+.league_name {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 0;
+}

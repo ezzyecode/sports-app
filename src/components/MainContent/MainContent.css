@@ -1,0 +1,49 @@
+.mantine-Container-root.mantine-swh8ft {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.mantine-Grid-col.mantine-239gyn {
+  padding-bottom: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-left: 0px;
+  margin-right: 20px;
+}
+.mantine-Grid-col.mantine-1tydyz4 {
+  background-color: #fff;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-right: 0px;
+  padding-left: 0px;
+}
+.mantine-Grid-col.mantine-1kvj1rt {
+  border-left: 1px solid #f5f7f9;
+  padding: 20px;
+  background-color: #fff;
+}
+.content-wrapper {
+  position: relative;
+  min-width: 0;
+  flex: 1;
+}
+@media (min-width: 1024px) {
+  .content {
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.06);
+  }
+}
+.content {
+  display: flex;
+  flex: 1;
+  min-width: 0;
+  background-color: #fff;
+}
+@media (min-width: 1024px) {
+  .content-inner {
+    border-radius: 8px 0 0 8px;
+  }
+}
+.content-inner {
+  flex: 1 1 100%;
+  min-width: 0;
+}
