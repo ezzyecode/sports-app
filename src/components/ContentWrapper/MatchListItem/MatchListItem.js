@@ -57,10 +57,15 @@ function MatchListItem({
             </div>
           </div>
           <div className="match-live-or-lineup">
-            {coverageData.mlive === 1 && <i className="play circle icon match-live"></i>}
-            {coverageData.mlive !== 1 && coverageData.lineup === 1 && (
-              <i className="chart line icon match-lineup"></i>
-            )}
+            <spand className="icon-setting">
+              {coverageData.mlive === 1 && (
+                <i className="play circle icon match-live"></i>
+              )}
+              {coverageData.mlive !== 1 && coverageData.lineup === 1 && (
+                <i className="chart line icon match-lineup"></i>
+              )}
+              {coverageData.mlive !== 1 && coverageData.lineup !== 1 && ""}
+            </spand>
           </div>
           <div
             className="match-sets match-sets--inplay"

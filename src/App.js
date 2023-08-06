@@ -31,6 +31,8 @@ function App() {
         </DesktopWrapper>
         <MobileWrapper>
           <HeaderMobile />
+          {/* <BreadcrumbBar /> */}
+          <MainContent />
         </MobileWrapper>
       </div>
     </Provider>

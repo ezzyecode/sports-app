@@ -30,7 +30,11 @@
     padding: 10px;
   }
 }
-.match-poll-overview, .match-poll-overview__placeholder {
+.match-poll-overview,
+.match-poll-overview__placeholder {
   /* min-height: 321px; */
   margin-bottom: 20px;
+}
+.wrapper.is-mobile .aside {
+  display: none;
 }

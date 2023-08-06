@@ -1,15 +1,17 @@
 import React from "react";
 import "./Header.css";
-import logo from "../../assets/images/logo.svg";
 import FlagTH from "../../assets/images/FlagTH.svg";
+import { LogoKub } from "../../assets/images/icons";
 
 function HeaderDesktop() {
   return (
-    <header className="header header-desktop">
+    <header className="header-desktop">
       <div className="container">
         <div className="header__wrap">
           <div className="header__inner">
-            <img className="logo" src={logo} alt="logo" />
+            <a href="/" className="logo">
+              <LogoKub />
+            </a>
             <div className="language-selector mr-auto">
               <button className="language-selector__toggle">
                 <span className="language-selector__flag">
@@ -42,35 +44,35 @@ function HeaderDesktop() {
             </div>
           </div>
           <div className="header__content">
-            <nav className="header-menu">
-              <ul className="header-menu-list">
-                <li className="header-menu-list-item nuxt-link-exact-active">
+            <nav className="navigation">
+              <ul className="navigation__list">
+                <li className="navigation__list__item nuxt-link-exact-active">
                   {/* eslint-disable-next-line */}
-                  <a className="header-menu-link" href="#">
+                  <a className="navigation__link" href="#">
                     Scores
                   </a>
                 </li>
-                <li className="header-menu-list-item">
+                <li className="navigation__list__item">
                   {/* eslint-disable-next-line */}
-                  <a className="header-menu-link" href="#">
+                  <a className="navigation__link" href="#">
                     New
                   </a>
                 </li>
-                <li className="header-menu-list-item">
+                <li className="navigation__list__item">
                   {/* eslint-disable-next-line */}
-                  <a className="header-menu-link" href="#">
+                  <a className="navigation__link" href="#">
                     Odds
                   </a>
                 </li>
-                <li className="header-menu-list-item">
+                <li className="navigation__list__item">
                   {/* eslint-disable-next-line */}
-                  <a className="header-menu-link" href="#">
+                  <a className="navigation__link" href="#">
                     Tips
                   </a>
                 </li>
-                <li className="header-menu-list-item">
+                <li className="navigation__list__item">
                   {/* eslint-disable-next-line */}
-                  <a className="header-menu-link" href="#">
+                  <a className="navigation__link" href="#">
                     Bookmakers
                   </a>
                 </li>

@@ -152,3 +152,7 @@
 .match-lineup {
   color: orange;
 }
+.icon-setting {
+  display: flow;
+  width: 20px;
+}

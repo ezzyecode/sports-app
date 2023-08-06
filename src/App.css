@@ -42,20 +42,20 @@ body {
     transform: rotate(360deg);
   }
 }
-.container {
-  display: flex;
-  max-width: 1320px;
-  margin: 0 auto;
+@media (min-width: 1280px) {
+  .container {
+    padding: 0 20px;
+  }
 }
 @media (min-width: 1024px) {
   .container {
     padding: 0 10px;
   }
 }
-@media (min-width: 1280px) {
-  .container {
-    padding: 0 20px;
-  }
+.container {
+  display: flex;
+  max-width: 1320px;
+  margin: 0 auto;
 }
 .sport-icon-container {
   height: 25px;
@@ -68,7 +68,7 @@ body {
 .wrapper {
   position: relative;
   display: flex;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   flex-direction: column;
   padding-top: 55px;
   background: #f5f7f9;
@@ -80,7 +80,8 @@ body {
 }
 
 .wrapper.is-mobile {
-  /* Mobile-specific styles */
+  padding-top: 0;
+  width: 100%;
 }
 
 /* Using media query for screen sizes */
@@ -99,7 +100,29 @@ body {
   width: 100%;
   flex: 1;
 }
-blockquote, body, dd, dl, dt, fieldset, figure, h1, h2, h3, h4, h5, h6, hr, html, iframe, legend, li, ol, p, pre, textarea, ul {
+blockquote,
+body,
+dd,
+dl,
+dt,
+fieldset,
+figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+html,
+iframe,
+legend,
+li,
+ol,
+p,
+pre,
+textarea,
+ul {
   margin: 0;
   padding: 0;
   list-style: none;

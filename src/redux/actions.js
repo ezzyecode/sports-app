@@ -20,7 +20,7 @@ export const fetchMatches = (date, page = 1, setHasMore) => {
   return async (dispatch, getState) => {
     dispatch(clearMatches()); // clear current data first
     const formattedDate = formatDate(date);
-    const response = await fetch(`http://165.22.104.72:3333/api/match/date/${formattedDate}?page=${page}&pageSize=20`);
+    const response = await fetch(`https://apiv2.game4.co/api/match/date/${formattedDate}?page=${page}&pageSize=20`);
     const data = await response.json();
 
     if (data) {

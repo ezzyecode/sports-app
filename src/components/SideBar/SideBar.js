@@ -5,7 +5,7 @@ function Sidebar() {
   const [leagues, setLeagues] = useState([]);
 
   useEffect(() => {
-    fetch("http://165.22.104.72:3333/api/competitions/popular")
+    fetch("https://apiv2.game4.co/api/competitions/popular")
       .then((response) => response.json())
       .then((data) => {
         setLeagues(data.slice(0, 10)); // only the first 10
