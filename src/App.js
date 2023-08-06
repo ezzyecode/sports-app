@@ -25,7 +25,7 @@ function App() {
       <div className="app">
         <DesktopWrapper>
           <HeaderDesktop />
-          <SubHeader />
+          {/* <SubHeader /> */}
           <BreadcrumbBar />
           <MainContent />
         </DesktopWrapper>
